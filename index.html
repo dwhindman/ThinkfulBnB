@@ -22,10 +22,10 @@
       <div class="logo">Thinkfulbnb</div>
       <nav>
         <ul id="menu">
-          <li><a href="stay" title="Stay">Stay</a></li>
-          <li><a href="about" title="About">About</a></li>
-          <li><a href="ideas" title="Ideas">Ideas</a></li>
-          <li><a href="host" title="Host">Host</a></li>
+          <li><a href="#stay" title="stay">Stay</a></li>
+          <li><a href="#about" title="about">About</a></li>
+          <li><a href="#ideas" title="ideas">Ideas</a></li>
+          <li><a href="#host" title="host">Host</a></li>
         </ul>
       </nav>
     </header>
@@ -37,11 +37,11 @@
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
         <form>
-          <div>
+          <div id="userInput">
             <label for="location">Location</label>
             <input id="location" type="text" name="city" placeholder="Search destination">
           </div>
-          <div>
+          <div id="userInput">
             <label for="arrival">Arrive</label>
             <input 
             id="arrival" 
@@ -50,7 +50,7 @@
             value="mm/dd/yyyy"
             min="03/10/2023" max="12/31/9999"/>
           </div>
-          <div>
+          <div id="userInput">
             <label for="depart">Depart</label>
             <input 
             id="depart" 
@@ -59,7 +59,7 @@
             value="mm/dd/yyyy"
             min="03/10/2023" max="12/31/9999"/>
           </div>
-          <div>
+          <div id="userInput">
             <label for="type">Type</label>
             <select name="type" id="type" size="1">
               <option value="singleroom">Single Room</option>
@@ -71,7 +71,7 @@
               <option value="Castle">Castle</option>
             </select>
           </div>
-          <button type="submit">Search</button>
+          <button id="userInput" type="submit">Search</button>
         </form>
       </section>
 

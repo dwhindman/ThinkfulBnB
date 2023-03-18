@@ -26,8 +26,11 @@ p {
 
 section {
   padding: 20px;
-}
 
+}
+input{
+  justify-content: space-between;
+}
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
@@ -61,12 +64,12 @@ main img {
 header {
   background-color: #ff385c;
   padding: 20px 20px 20px 20px;
-  text-align: center;
+  justify-content: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 100px;
+  font-size: 65px;
   color: #fff;
   margin-bottom: 10px;
 }
@@ -79,7 +82,7 @@ header nav ul{
 
 header nav ul li {
   list-style-type: none;
-  font-size: 25px; 
+  font-size: 20px; 
 }
 
 header nav ul li a {
@@ -108,16 +111,18 @@ form {
 
 form label {
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
-form select,
-form input {
+form select, form input{
   margin-bottom: 20px;
   margin-right: 10px;
   float: right;
-  width: 225px;
+  width: 50vw;
+  flex-shrink: 2;
 }
+
+
 
 form button {
   background-color: #ff385c;
@@ -169,17 +174,17 @@ footer p {
     flex-direction: row;
     padding: center;
     margin: 0;
+    justify-content: space-between;    
   }
   form label{
-    margin: 0px;
+    margin: 0px 5px;   
+
   }
-  form select, 
-  form input{
+  form select{
     display: flex;
     justify-content: center;
-    width: 200px;
-    margin-right: 55px;
-  }
+    
+  } 
   
   main img{
     width:25%;
@@ -193,7 +198,16 @@ footer p {
     align-items: center;
     font-size: 14px;
   }
-  
+
+  #userInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 6vw;
+    font-size: 1.25vw;
+  }
+
   #ideasColumn{
     display: flex;
     flex: 1;
